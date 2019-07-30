@@ -4,14 +4,15 @@
 
 def binary_search(array: list, num: int)-> bool:
     list_len = len(array)
-
-    if num >= array[int(list_len/2)]:
-        array = array[int(list_len/2):]
+    half = lambda l: int(l/2)
+    
+    if num >= array[half(list_len)]:
+        array = array[half(list_len):]
         list_len = len(array)
         
         return array[0] == num if list_len==1 else binary_search(array, num)
     else:
-        array = array[:int(list_len/2)]
+        array = array[:half(list_len)]
         list_len = len(array)
 
         return array[0] == num if list_len==1 else binary_search(array, num)
