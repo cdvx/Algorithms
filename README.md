@@ -1,2 +1,2 @@
 # Algorithms
-Search Algorithms implemented in python and C++
+Algorithms and Data-Structures implemented in python and C++

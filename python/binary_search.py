@@ -1,5 +1,7 @@
 """Binary search implementation in python"""
 
+
+__author__ = 'cdvx'
 # precondition -> array has to be sorted
 
 def binary_search(array: list, num: int)-> bool:

@@ -1,5 +1,7 @@
 """Linear search implementation in python"""
 
+__author__ = 'cdvx'
+
 # array does not have to be sorted
 
 def linear_search(array: list, num: int)-> bool:
