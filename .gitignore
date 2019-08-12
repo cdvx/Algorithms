@@ -108,3 +108,6 @@ venv.bak/
 
 # virtual env
 venv/
+
+# c executables
+c++/a.out*

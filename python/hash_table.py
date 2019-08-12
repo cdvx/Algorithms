@@ -42,13 +42,10 @@ def delete(hash_table, key):
         val, index, hash_k = check
         hash_table[hash_k].remove((key, val))
         print(f'Key {key} deleted! \nTable: {hash_table} \nHash_key:{hash_k}')
-    print(f'Key {key} Not found! \nTable: {hash_table}')
+    else:
+        print(f'Key {key} Not found! \nTable: {hash_table}')
         
 
-
-
-
- 
 
 table = hash_table(10)
 insert(table, 10, 'Nepal')
