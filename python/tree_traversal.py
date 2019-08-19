@@ -12,8 +12,11 @@ my_other_tree.right = Node(3)
 my_other_tree.left.left = Node(4) 
 my_other_tree.left.right = Node(5)
 
+# Depth Firsth Search
 
 def in_order_traversal(my_tree: Node, tree_list: list =[]) -> None:
+    # L N R
+
     if my_tree:
         in_order_traversal(my_tree.left)
         tree_list.append(my_tree.value)
@@ -24,6 +27,7 @@ def in_order_traversal(my_tree: Node, tree_list: list =[]) -> None:
     print(tree_list)
 
 def post_order_traversal(my_tree: Node, tree_list: list=[]) -> None:
+    # L R N
 
     if my_tree:
         post_order_traversal(my_tree.left)
@@ -34,7 +38,8 @@ def post_order_traversal(my_tree: Node, tree_list: list=[]) -> None:
     print(tree_list)
 
 def pre_order_traversal(my_tree: Node, tree_list: list=[]) -> None:
-    
+    # N L R
+
     if my_tree:
         # print(my_tree.value)
         tree_list.append(my_tree.value)
