@@ -12,3 +12,9 @@ my_bst = bst(height=3, is_perfect=True)
 my_heap = heap(height=3, is_max=True, is_perfect=False)
 
 
+# class Tree:
+#     def __init__(self):
+#         self.root = None
+
+
+

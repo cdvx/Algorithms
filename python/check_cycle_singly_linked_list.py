@@ -5,7 +5,7 @@ class Node:
         self.next = None
 
     def __str__(self):
-        return f'{self.value} '#{self.__repr__()}\n'#n: {self.n.value} <<\n '
+        return f'{self.value} '
 
 class LinkedList:
     def __init__(self):
@@ -22,7 +22,6 @@ class LinkedList:
             print(current)
             current = current.next
             if self.contains_cycle():
-                print('\n loop found>>', current)
                 break
 
     def contains_cycle(l_list):

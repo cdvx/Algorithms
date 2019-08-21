@@ -3,7 +3,6 @@
 __author__ = 'cdvx'
 
 from binarytree import Node
-# from tree_traversal import my_other_tree, my_tree
 from queue import Queue
 
 

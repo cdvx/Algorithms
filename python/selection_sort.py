@@ -1,6 +1,6 @@
 """Selection sort implementation in python"""
 
-
+@profile
 def selection_sort(l):
     for i in range(len(l)):
         min_i = i
