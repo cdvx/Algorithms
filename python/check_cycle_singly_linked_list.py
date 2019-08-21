@@ -34,21 +34,23 @@ class LinkedList:
             current = current.next
         return False
 
-n1 = Node(2)
-n2 = Node(20)
 
-l = LinkedList()
-l.push(n1)
-l.push(n2)
-l.push(Node(1))
-l.push(Node(34))
-l.push(Node(0))
+if __name__=='__main__':
+    n1 = Node(2)
+    n2 = Node(20)
 
-l.printl()
+    l = LinkedList()
+    l.push(n1)
+    l.push(n2)
+    l.push(Node(1))
+    l.push(Node(34))
+    l.push(Node(0))
 
-    
-print(l.contains_cycle())
-l.head.next.next = l.head.next
-l.printl()
-print(l.contains_cycle())
+    l.printl()
+
+        
+    print(l.contains_cycle())
+    l.head.next.next = l.head.next
+    l.printl()
+    print(l.contains_cycle())
 
